@@ -1,0 +1,32 @@
+﻿@model FirstWebApp.Models.Employee
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col"> @Html.DisplayNameFor(e=>e.Id) </th>
+            <th scope="col"> @Html.DisplayNameFor(e=>e.FirstName)</th>
+            <th scope="col"> @Html.DisplayNameFor(e=>e.LastName)</th>
+            <th scope="col"> @Html.DisplayNameFor(e=>e.Job)</th>
+            <th scope="col"> @Html.DisplayNameFor(e=>e.Salary)</th>
+            <th scope="col"> @Html.DisplayNameFor(e=>e.HireDate)</th>
+            <th scope="col" class="text-center"> Actions </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">@Html.DisplayFor(m=>m.Id)</th>
+            <td>@Html.DisplayFor(m=>m.FirstName)</td>
+            <td>@Html.DisplayFor(m=>m.LastName)</td>
+            <td>@Html.DisplayFor(m=>m.Job)</td>
+            <td>@Html.DisplayFor(m=>m.Salary)</td>
+            <td>@Html.DisplayFor(m=>m.HireDate)</td>
+            <td>
+                <a asp-action="Index" class="btn btn-info">Back to Font View</a>
+            </td>
+        </tr>
+
+
+
+
+    </tbody>
+</table>

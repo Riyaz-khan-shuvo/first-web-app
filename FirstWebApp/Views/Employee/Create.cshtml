@@ -1,0 +1,30 @@
+﻿@model FirstWebApp.Models.Employee
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" type="text" class="form-control" placeholder="Enter First Name Here">
+
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" type="text" class="form-control" placeholder="Enter Last Name Here">
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Job"></label>
+        <input asp-for="Job" type="text" class="form-control" placeholder="Enter JOb Here">
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Salary"></label>
+        <input asp-for="Salary" type="text" class="form-control" placeholder="Enter Salary Here">
+
+    </div>
+    <div class="form-group">
+        <label asp-for="HireDate"></label>
+        <input asp-for="HireDate" type="text" class="form-control" placeholder="Enter Hire Date Here">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,26 @@
+﻿@model FirstWebApp.Models.Employee
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <label>@Html.DisplayFor(m=>m.FirstName)</label>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <label>@Html.DisplayFor(m=>m.LastName)</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="Job"></label>
+        <label>@Html.DisplayNameFor(m=>m.Job)</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="Salary"></label>
+        <label>@Html.DisplayFor(m=>m.Salary)</label>
+    </div>
+    <div class="form-group">
+        <label asp-for="HireDate"></label>
+        <label>@Html.DisplayFor(m=>m.HireDate)</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
